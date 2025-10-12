@@ -22,7 +22,7 @@ npm install
 ## Stack
 
 - React Native (CLI + Expo)
-- TypeScript
+- JavaScript
 - Android & iOS
 - Cloudflare
 - Firebase
