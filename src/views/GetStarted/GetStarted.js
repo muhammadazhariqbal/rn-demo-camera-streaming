@@ -4,24 +4,16 @@ import {
   Text,
   StyleSheet,
   TouchableOpacity,
-  Alert,
   Linking,
 } from 'react-native';
-import {
-  createStaticNavigation,
-  useNavigation,
-} from '@react-navigation/native';
+import { REPO_URL } from '../../constants/config';
+
 export default function GetStarted({ navigation }) {
   const handleGetStarted = () => {
-    // For now, just show an alert or navigate to next screen
-    Alert.alert(
-      'Get Started pressed',
-      'You can navigate to your player screen here.',
-    );
     navigation.navigate('Player');
   };
   const openGitHub = () => {
-    Linking.openURL('https://github.com/muhammadazhariqbal/expose-local-RTSP');
+    Linking.openURL(REPO_URL);
   };
 
   return (

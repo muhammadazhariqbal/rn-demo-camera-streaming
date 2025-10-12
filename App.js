@@ -1,9 +1,6 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
-import GetStarted from './src/views/GetStarted/GetStarted';
-import Player from './src/views/Player/Player';
-
-// import DetailsScreen from './DetailsScreen';
+import { GetStarted, Player } from './src/views';
 
 const Stack = createNativeStackNavigator();
 
