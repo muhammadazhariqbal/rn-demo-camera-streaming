@@ -4,9 +4,9 @@ Portfolio showcasing React Native implementations with complex features.
 
 ## Projects
 
-### Coming Soon
+**HLS** – Streaming with local RTSP to HLS conversion  
+➡️ [View on hls-streaming branch](https://github.com/muhammadazhariqbal/rn-demos/tree/hls-streaming)
 
-Building out feature demos - check back soon.
 
 **Planned:**
 
