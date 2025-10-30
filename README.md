@@ -4,9 +4,9 @@ A React Native CLI application for streaming HLS (HTTP Live Streaming) video fro
 
 ## Prerequisites
 
-Before using this player, you need to have an HLS stream URL (.m3u8). If you have a local RTSP camera feed, follow the setup below.
+**HLS** – Streaming with local RTSP to HLS conversion  
+➡️ [View on hls-streaming branch](https://github.com/muhammadazhariqbal/rn-demos/tree/hls-streaming)
 
-### Getting Your HLS Stream URL
 
 **If you have a local RTSP stream (e.g., security camera, IP camera):**
 
