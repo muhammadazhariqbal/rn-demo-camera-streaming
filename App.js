@@ -1,57 +1,20 @@
-import React from 'react';
-import { View, Text, Linking, StyleSheet, ScrollView } from 'react-native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { GetStarted, Player } from './src/views';
 
-export default function AppContent() {
+const Stack = createNativeStackNavigator();
+
+export default function App() {
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.title}>About Me</Text>
-
-      <Text style={styles.text}>
-        Hi, I'm <Text style={styles.bold}>Muhammad Azhar Iqbal</Text>. I build
-        mobile and web applications using modern technologies.
-      </Text>
-
-      <Text style={styles.text}>
-        This app is a basic template that serves as the parent for multiple
-        sub-features. One of its sub-features is my portfolio, divided into
-        separate branches for each project.
-      </Text>
-
-      <Text
-        style={[styles.text, styles.link]}
-        onPress={() =>
-          Linking.openURL('https://github.com/muhammadazhariqbal/rn-demos')
-        }
+    <NavigationContainer>
+      <Stack.Navigator
+        initialRouteName="GetStarted"
+        screenOptions={{ headerShown: false }}
       >
-        View my GitHub repository
-      </Text>
-    </ScrollView>
+        <Stack.Screen name="GetStarted" component={GetStarted} />
+        <Stack.Screen name="Player" component={Player} />
+        {/* <Stack.Screen name="Details" component={DetailsScreen} /> */}
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flexGrow: 1,
-    paddingHorizontal: 20,
-    paddingVertical: 40,
-    backgroundColor: '#fff',
-  },
-  title: {
-    fontSize: 28,
-    fontWeight: 'bold',
-    marginBottom: 15,
-  },
-  text: {
-    fontSize: 16,
-    lineHeight: 24,
-    marginBottom: 15,
-    color: '#333',
-  },
-  bold: {
-    fontWeight: 'bold',
-  },
-  link: {
-    color: '#1e90ff',
-    textDecorationLine: 'underline',
-  },
-});
