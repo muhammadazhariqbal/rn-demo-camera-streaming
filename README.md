@@ -1,3 +1,5 @@
+![cover](cover-repo.png)
+
 # React Native HLS Stream Player
 
 A React Native CLI application for streaming HLS (HTTP Live Streaming) video from Cloudflare or any HLS-compatible source.
